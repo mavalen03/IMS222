@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mike's Homepage</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+</head>
+<!-- this is the body part -->
+
+<body>
+    <h2 id="top">Welcome to Mike's Homepage</h2>
+    <hr>
+    <p id=firstp> My name is Michael Valentino and this is my first website</p>
+    <ul id=menubar>
+        <li>Home</li>
+        <li>About Me</li>
+        <li>My Favorite</li>
+    </ul>
+    <!-- about me -->
+    <h3 class="subheading"><u>About Me</u></h3>
+    <ul id="aboutme">
+        <li>I am a ETBD (Games) Student</li>
+        <li>My dept is ETBD</li>
+        <li>I like programming</li>
+        <li>my favorite site is <a href="https://twitter.com/?lang=en">twitter.com</a></li>
+    </ul>
+    <h3 class="subheading"><u>My Favorite Places to Visit</u></h3>
+    <table cellpadding="10" border="8" bgcolor=" #ff1000">
+        <!-- establish headers -->
+        <th> Name of Place </th>
+        <th> Picture of Place </th>
+        <!-- establish rows -->
+        <tr class="odd">
+            <!-- establish columns within rows -->
+            <td> Washington D.C.</td>
+            <td> <img src="dc.jpg" width="500px" height="300px" alt="dc" /></td>
+        </tr>
+        <tr class="even">
+            <td> Pittsburgh</td>
+            <td> <img src="pittsburgh.jpg" width="350px" height="300px" /></td>
+        </tr>
+    </table>
+    <!-- establish a form the user can interact with -->
+    <h3 class="contact">Contact Me</h3>
+    <form action="thankyou.html" method="get">
+        <fieldset>
+            <legend>Your Details:</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <p>
+                <label for="hear-about">How did you hear about this site?</label>
+                <select name="referrer" id="hear-about">
+                    <option value="google">LikedIn</option>
+                    <option value="friend">Facebook</option>
+                    <option value="friend">Other</option>
+                </select>
+            </p>
+            <p> Do you like my site? <br>
+                <label><input type="radio" name="rating" value="yes"> I love it</label>
+                <label><input type="radio" name="rating" value="no"> I hate it</label>
+            </p>
+            <p>
+                <label for="comments">Comments:</label><br>
+                <textarea rows="4" cols="40" id="comments"></textarea>
+            </p>
+            <input type="submit" value="Send">
+        </fieldset>
+    </form>
+    <h3 class="subheading"><u>Where I go to school</u></h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.2120069875095!2d
+-
+84.73536738431277!3d39.50970451822315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1
+m2!1s0x88403d0af59465c7%3A0xff423fec6675f5a8!2sLaws%20Hall%2C%20551%20E%20High%
+20St%2C%20Oxford%2C%20OH%2045056!5e0!3m2!1sen!2sus!4v1660832439798!5m2!1sen!2s
+us" width="65%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <h3 class="subheading"><u>My favorite animal</u></h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MLMRHScRnhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="#top">Go to Top</a></p>
+</body>
+<footer>
+    <hr />
+    Copyright Michael Valentino
+</footer>
+
+</html>
